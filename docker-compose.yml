@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   prometheus-browserless-exporter:
-    image: prometheus-browserless-exporter:latest
+    image: tehwey/prometheus-browserless-exporter:latest
     restart: always
     environment:
       LISTEN_ADDR: :3001
