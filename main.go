@@ -25,7 +25,7 @@ func main() {
 
 	fs := flag.NewFlagSet("prometheus-browserless-exporter", flag.ExitOnError)
 	var (
-		listenAddr          = fs.String("listen-addr", "localhost:3001", "listen address")
+		listenAddr          = fs.String("listen-addr", ":3001", "listen address")
 		timeoutSeconds      = fs.Int("timeout", 5, "timeout in seconds")
 		debug               = fs.Bool("debug", false, "log debug information")
 		browserlessEndpoint = fs.String("browserless-endpoint", "http://localhost:3000/metrics/total", "browserless metrics endpoint")
